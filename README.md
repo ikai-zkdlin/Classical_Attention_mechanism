@@ -121,7 +121,7 @@ Deformable Convolution
 $$
 \begin{align}
    &y_{(p_0)} = \sum_{p_0 \in R}w_{(p_n)} \cdot x_{(p_0 + p_n+ \Delta_{p_{n}})} \\
-&offsets = \{\Delta p|n=1,...,N\} 
+   &offsets = \{\Delta p|n=1,...,N\} 
 \end{align}
 
 $$
@@ -151,10 +151,10 @@ $$
 
 |propeties|Convolution|Self-attention|LKA|
 |-|-|-|-|
-|local Receptive Field| ✔| x | ✔|
-|Long Range Dependence| x | ✔| ✔|
-|Spatial Adaptability| x| ✔| ✔|
-|Channel Adaptability|x|x| ✔|
+|local Receptive Field| ✔| × | ✔|
+|Long Range Dependence| × | ✔| ✔|
+|Spatial Adaptability| ×| ✔| ✔|
+|Channel Adaptability|×|×| ✔|
 
 ### Application
 - 视觉骨干网络
