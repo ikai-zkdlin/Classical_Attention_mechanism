@@ -120,8 +120,8 @@ Deformable Convolution
 
 $$
 \begin{align}
-   &y_{(p_0)} = \sum_{p_0 \in R}w_{(p_n)} \cdot x_{(p_0 + p_n+ \Delta_{p_{n}})} \\
-   &offsets = \{\Delta p|n=1,...,N\} 
+   & y_{(p_0)} = \sum_{p_0 \in R} w_{(p_n)} \cdot x_{(p_0 + p_n+ \Delta_{p_{n}})} \\
+   & offsets = \{\Delta p|n=1,...,N\} 
 \end{align}
 
 $$
