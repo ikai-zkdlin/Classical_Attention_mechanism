@@ -139,7 +139,7 @@ $$
 
 <div align=center><img src='./Images/lka.png' width=550></div> 
 
-> DepthWise Conv->Dilated Conv->1x1 conv
+> DepthWise Conv->Dilated Conv->1x1 Conv
 
 |propeties|Convolution|Self-attention|LKA|
 |-|-|-|-|
@@ -150,7 +150,7 @@ $$
 
 ### Application
 - 视觉骨干网络
-- BEtT/MAE(Self-supervised)
+- BEiT/MAE(Self-supervised)
 - 为什么要把Attention和Self-Supervised Learning结合
 > 宽泛的来讲,Attention具有Self-Adaptive的性质,这是卷积所不具有的性质。Attention的输出会根据输入进行调整(dynamic process)。因此Attention更适合进行领域迁移,所以适合做Self-Supervised Learning。
 
