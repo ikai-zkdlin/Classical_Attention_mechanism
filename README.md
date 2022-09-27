@@ -99,7 +99,7 @@ $$
 <center>
 	<img src="./Images/deformable conv.png" width="70%" />
 </center>
-> 传统的卷积是周围的规则范围内的点与周围的点进行邻域内的聚合,Deformable Convolution不是传统意义上的卷积，关注的点不一定是淋浴的,可以是散点，但是需要让网络学习出来需要关注的点是哪些点。到最后只需要学习一个offset,每个点向着哪个方向进行偏移，之后再采样这些偏移的点，把这些重要区域利用起来，实现注意力机制。
+> 传统的卷积是周围的规则范围内的点与周围的点进行邻域内的聚合,Deformable Convolution不是传统意义上的卷积，关注的点不一定是领域的,可以是散点，但是需要让网络学习出来需要关注的点是哪些点。到最后只需要学习一个offset,每个点向着哪个方向进行偏移，之后再采样这些偏移的点，把这些重要区域利用起来，实现注意力机制。
 
 $$
 \begin{align}
@@ -136,9 +136,9 @@ $$
 每一个点的输入点需要其周围的N个点，具有x,y两个方向，通过卷积层来实现，得到offsets,控制后面的deformable convolution得到最后的output feature map
 
 - Large Kernel Attention (LKA) 3组卷积
-
+<center>
 <div align=center><img src='./Images/lka.png' width=550></div> 
-
+</center>
 > DepthWise Conv->Dilated Conv->1x1 Conv
 
 |propeties|Convolution|Self-attention|LKA|
@@ -165,7 +165,9 @@ $$
 > 参考卷积中的Saliency Map、CAM
 - 4.注意力机制中的稀疏激活
 - 5.基于注意力机制的预训练模型
+<center>
 <div align=center><img src='./Images/self_supervised.jpg' width=550></div> 
+</center>
 > 迁移学习,迁移到没见过的物体上看效果。
 
 - 6.适用于注意力机制的优化方法
@@ -181,7 +183,7 @@ attention | SAM
 
 - 8.部署注意力机制的模型
 
-### 参考资料
+### 参考文献
 - Xiaolong Wang, Kaiming He,et al. Non-local Neural Networks CVPR 2018
 - Jie Hu, Li Shen, et al. Squeeze-and-Excitation Networks CVPR 2018
 - Bommasani et al.  On the Opportunities and Risks of Foundation Models
